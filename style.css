@@ -28,7 +28,7 @@ body {
  width: 100px;
  height: 100px;
  border-style: double;
- display: inline;
+ display: flex;
 }
 	
 #textbox1 {	
@@ -39,12 +39,12 @@ body {
 	
 #textbox2 {	
 	left: 60%;
-	top:40%;
+	top:20%;
 
 }
 	
 #textbox3 {	
 	left: 30%;
-	top:65%;
+	top:45%;
 
 }
