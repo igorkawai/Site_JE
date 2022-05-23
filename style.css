@@ -12,15 +12,20 @@ body {
 
 #page1 {
 	position:relative;
-  background-image: linear-gradient(MidnightBlue, MidnightBlue, SeaGreen);;
+  background-image: linear-gradient(MidnightBlue, MidnightBlue, SeaGreen);
   height: 1280px;
   width: 100%;
   	display:inline-block;
 }
 
+.img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 img {
 	opacity: 0.3;
-
 }
 
 /*
@@ -54,7 +59,7 @@ img {
 	  text-align: center;
 	  padding-top: 18%;
 	  font-size: 600%;
-	  position: sticky;
+	  position: absolute;
 	  z-index:2;
 }
 
