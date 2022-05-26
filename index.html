@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta nome="viewport" content="width=device-width, initial scale=1">
 <link rel="stylesheet" href="style.css">
+<link rel="scriptsheet" href="script.js">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <title>JE</title>
 </head>
 <body>
 	<div id="page1">
-			<img src="src/slide1.jpg">
+	<section>
+			<img src="src/slide3.jpeg" class="mySlides fade">
+			<img src="src/slide2.jpg" class="mySlides fade">
+			<img src="src/slide1.jpg" class="mySlides fade">
+			</section>
 			<div id="titulo">Jovem Empreendedor</div>
-		<div id="logoIFC" class="logo"> A </div>
-		<div id="logoFAPESC"class="logo"> A </div>
-		<div id="logoIFCRIA"class="logo"> A </div>
-	
 	</div>
 	<div id="page2">
 		<div id="textbox1" class="textbox">
@@ -32,5 +37,26 @@
 	<button id="insc"> INSCREVA-SE </BUTTON>
 	</div>
 	</div>
+	<div id="page4">
+	<div id="feedback">
+	Se você se interessar e não quiser se inscrever no curso, por favor, nos informe por esse botão &darr;
+	</div>
+	<button id="feedbutton"> --- </button>
+	</div>
+	<script>
+	let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}</script>
 </body>
 </html>
