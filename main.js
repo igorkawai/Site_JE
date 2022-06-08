@@ -1,12 +1,13 @@
 c = document.querySelector(".carrossel")
-ci = document.getElementsByClassName(".carrosselImg").length
-while (true) {
-    for (let i = 0; i < ci.length; i++) {
-        setTimeout(
-            c.scrollBy(c.clientWidth, 0)
-            ,2000);
-        }
-        setTimeout(
+ci = document.getElementsByClassName("carrosselImg").length
+i = 1
+setInterval(() => {
+    if (i<ci){
+        c.scrollBy(c.clientWidth, 0)
+    }else{
         c.scrollTo(0, 0)
-        , 2000)
-}
+        i=1
+    }
+
+    i++
+}, 2000);
