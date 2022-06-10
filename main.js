@@ -6,7 +6,7 @@ setInterval(() => {
         c.scrollBy(c.clientWidth, 0)
     }else{
         c.scrollTo(0, 0)
-        i=1
+        i=0
     }
 
     i++
