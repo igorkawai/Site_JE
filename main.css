@@ -43,14 +43,12 @@ header > h1,h2 {
 	justify-content: center;
 	color: white;
 	z-index: 2;
-	
 }
 
 main {
 	background-color: green;
 	overflow: hidden;
 	width: 100vw;
-	/* margin: ; */
 }
 
 main section {
@@ -82,4 +80,59 @@ main section {
 	height: auto;
 	display: block;
 	margin: auto;
+}
+.informativo {
+	position: relative;
+}
+
+
+.formInsc {
+	position: absolute;
+	width: 7vw;
+	height: 3vh;
+	right:20vw;
+	bottom:10vh;
+	background:rgb(6, 15, 141);
+	box-shadow: 3px 3px black;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.formInsc:hover {
+	box-shadow: 0 0 black;
+}
+
+.formInsc:active {
+   box-shadow: 3px 3px black;
+}
+
+.interesse{
+	position:relative;
+}
+
+.interesse>img{
+	width: 60vw;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+.formInteresse {
+	position: absolute;
+	width: 7vw;
+	height: 3vh;
+	right:45vw;
+	bottom:20vh;
+	background:rgb(6, 15, 141);
+	box-shadow: 3px 3px black;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.formInteresse:hover {
+	box-shadow: 0 0 black;
+}
+
+.formInteresse:active {
+   box-shadow: 3px 3px black;
 }
