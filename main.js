@@ -1,11 +1,11 @@
-c = document.querySelector(".carrossel")
-ci = document.getElementsByClassName("carrosselImg").length
+car = document.querySelector(".carrossel")
+carImg = document.getElementsByClassName("carrosselImg").length
 i = 1
 setInterval(() => {
-    if (i<ci){
-        c.scrollBy(c.clientWidth, 0)
+    if (i<carImg){
+        car.scrollBy(car.clientWidth, 0)
     }else{
-        c.scrollTo(0, 0)
+        car.scrollTo(0, 0)
         i=0
     }
 
