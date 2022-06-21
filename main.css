@@ -45,6 +45,14 @@ header > h1,h2 {
 	z-index: -1;
 }
 
+.seloFapesc {
+	position: fixed;
+	top: 5vh;
+	left: 3vw;
+	background: yellow;
+	z-index: 3;
+}
+
 main {
 	background-color: green;
 	overflow: hidden;
@@ -170,16 +178,5 @@ main section {
 	right:45vw;
 	bottom:20vh;
 	background:rgb(6, 15, 141);
-	box-shadow: 3px 3px black;
-	transition-duration: 0.4s;
 	cursor: pointer;
 }
-
-.formInteresse:hover {
-	box-shadow: 0 0 black;
-}
-
-.formInteresse:active {
-   box-shadow: 3px 3px black;
-}
-
